@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+chatgpt-bible.dariuslukas.com	TRUE	/	FALSE	1999999999	exp4	control
+.cdn.webflow.com	TRUE	/	FALSE	1999999999	_cfuvid	C414kzOjgQj19upWlACOnrNMSk3TAAf5QEXo4DNtkMk-1745807429355-0.0.1.1-604800000
+chatgpt-bible.dariuslukas.com	TRUE	/	FALSE	1999999999	SameSite	None
+
