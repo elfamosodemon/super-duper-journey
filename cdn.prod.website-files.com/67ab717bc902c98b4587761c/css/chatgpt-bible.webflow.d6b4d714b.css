@@ -12,6 +12,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+
+#text-block-61{
+color: #000;
+}
+
 audio, canvas, progress, video {
   vertical-align: baseline;
   display: inline-block;
@@ -20,6 +25,10 @@ audio, canvas, progress, video {
 audio:not([controls]) {
   height: 0;
   display: none;
+}
+
+#text-block-63{
+  color: white;
 }
 
 [hidden], template {
@@ -2190,6 +2199,9 @@ h2 {
   font-size: 72px;
   font-weight: 700;
   line-height: 120px;
+}
+.image-5, .image-10, .image-11, .image-12 {
+  border-radius: 10px; /* Ou outro valor que você preferir */
 }
 
 .text-block-7 {
@@ -4998,10 +5010,23 @@ h2 {
     text-align: left;
   }
 
+  .div-block-9, .div-block-10 {
+    flex: 1;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .div-block-9 img, .div-block-10 img {
+    width: 100%;
+    height: auto;
+  }
+  
   .image-29 {
     margin-top: 20px;
   }
-
+  #italic-text-2{
+    color: white;
+  }
   .italic-text-2 {
     font-size: 26px;
     line-height: 28px;
