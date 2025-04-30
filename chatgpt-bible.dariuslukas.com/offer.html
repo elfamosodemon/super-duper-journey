@@ -656,31 +656,3 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
   </div>
 </div>
-
-<script>
-  // Verifica se o modal já foi exibido
-  if(localStorage.getItem('promoModalShown') !== 'true') {
-      // Previne a saída da página com o evento beforeunload
-      window.addEventListener("beforeunload", function (e) {
-          // Impede a navegação e mostra o modal
-          document.getElementById('promo-modal').style.display = 'block';
-          e.preventDefault();
-          // A mensagem de confirmação vai depender do navegador
-          e.returnValue = "Você tem certeza que quer sair?"; // Para navegadores mais antigos
-          return "Você tem certeza que deseja sair?"; // Navegadores mais recentes
-      });
-
-      // Botão "Sim" - Redireciona o usuário para a promoção
-      document.getElementById("btn-yes").addEventListener("click", function() {
-          window.location.href = "https://pay.cakto.com.br/uyj5qvx_362607"; // Link para a promoção
-          localStorage.setItem('promoModalShown', 'true'); // Marca que o modal foi mostrado
-      });
-
-      // Botão "Não" - Fecha o modal e marca o evento como já ocorrido
-      document.getElementById("btn-no").addEventListener("click", function() {
-          window.location.href = "https://pay.cakto.com.br/uyj5qvx_362607";
-          document.getElementById('promo-modal').style.display = 'none'; // Fecha o modal
-          localStorage.setItem('promoModalShown', 'true'); // Marca que o modal foi mostrado
-      });
-  }
-</script>
